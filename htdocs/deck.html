@@ -28,25 +28,65 @@
 				font-size: 2em;
 				padding: 5px;
 				font-weight: bold;
+				position: absolute;
+				transform-origin: bottom left;
+				transition: all 0.5s;
+				left: 46%;
+				right: 20%;
+				bottom: 58%;
+			
 			}
 			#deck div:hover{
 				border: 3px solid yellow;
 			}
+
+			#deck:hover div:first-child{
+				transform: rotate(-30deg);
+			}
+			#deck:hover div:nth-child(2){
+				transform: rotate(-20deg);
+			}			
+			#deck:hover div:nth-child(3){
+				transform: rotate(-10deg);
+			}
+			
+			#deck:hover div:nth-child(4){
+				transform: rotate(60 deg);
+			}
+			#deck:hover div:nth-child(5){
+				transform: rotate(10deg);
+			}
+
+
 			#deck div:first-child:hover{
 				background-color: yellow;
 			}
+
+
+
 			#deck div:nth-child(2):hover{
 				background-color: orange;
 			}
+
+
+
 			#deck div:nth-child(3):hover{
 				background-color: green;
+
 			}
+
+
+
 			#deck div:nth-child(4):hover{
 				background-color: blue;
 			}
+
 			#deck div:nth-child(5):hover{
 				background-color: violet;
+
 			}
+
+
 			a {
 				text-decoration: none;
 			}
